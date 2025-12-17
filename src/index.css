@@ -704,6 +704,443 @@ h3 {
   }
 }
 
+/* Mkonmko's Circle Section */
+.circle-section {
+  padding: 4rem 2rem;
+  background: #fff3e0;
+  text-align: center;
+  border-top: 4px dashed #ef6c00;
+  border-bottom: 4px dashed #ef6c00;
+}
+
+.circle-section h2 {
+  font-size: 2.5rem;
+  color: #ef6c00;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #fff;
+}
+
+.circle-section .subtitle {
+  color: #555;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.characters-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.character-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 3px solid #333;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+}
+
+.character-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  color: #333;
+}
+
+.character-card .role {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.char-img-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.char-img {
+  max-height: 100%;
+  max-width: 100%;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s;
+}
+
+.action-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.action-btn:hover {
+  background: #000;
+}
+
+.action-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Specific Card Styles */
+.marwan-card {
+  border-color: #2196f3;
+}
+
+.marwan-card .action-btn {
+  background: #2196f3;
+}
+
+.marwan-card .action-btn:hover {
+  background: #1976d2;
+}
+
+.kuku-card {
+  border-color: #f44336;
+}
+
+.kuku-card .action-btn {
+  background: #f44336;
+}
+
+.kuku-card .action-btn:hover {
+  background: #d32f2f;
+}
+
+.masagel-card {
+  border-color: #ff9800;
+}
+
+.masagel-card .action-btn {
+  background: #ff9800;
+}
+
+.masagel-card .action-btn:hover {
+  background: #f57c00;
+}
+
+.gayoga-card {
+  border-color: #795548;
+}
+
+.gayoga-card .action-btn {
+  background: #795548;
+}
+
+.gayoga-card .action-btn:hover {
+  background: #5d4037;
+}
+
+.galgalang-card {
+  border-color: #9c27b0;
+}
+
+.galgalang-card .action-btn {
+  background: #9c27b0;
+}
+
+.galgalang-card .action-btn:hover {
+  background: #7b1fa2;
+}
+
+.cahyo-card {
+  border-color: #000;
+  background: #fafafa;
+}
+
+.cahyo-card .action-btn {
+  background: #000;
+}
+
+.cahyo-card .action-btn:hover {
+  background: #333;
+}
+
+.bjox-card {
+  border-color: #e91e63;
+}
+
+.bjox-card .action-btn {
+  background: #e91e63;
+}
+
+.bjox-card .action-btn:hover {
+  background: #c2185b;
+}
+
+.sopayam-card {
+  border-color: #ffd700;
+  background: #fffde7;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.sopayam-card .action-btn {
+  background: #fbc02d;
+  color: #000;
+}
+
+.sopayam-card .action-btn:hover {
+  background: #f9a825;
+}
+
+.nur-card {
+  border-color: #4caf50;
+}
+
+.nur-card .action-btn {
+  background: #4caf50;
+}
+
+.nur-card .action-btn:hover {
+  background: #388e3c;
+}
+
+/* Animations */
+.cheers-anim {
+  animation: cheers 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes cheers {
+  from {
+    transform: rotate(-10deg) scale(1);
+  }
+
+  to {
+    transform: rotate(10deg) scale(1.1);
+  }
+}
+
+.fight-anim {
+  animation: fight 0.1s linear infinite;
+}
+
+@keyframes fight {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-5px, 5px);
+  }
+
+  50% {
+    transform: translate(0, -5px);
+  }
+
+  75% {
+    transform: translate(5px, 5px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.cook-anim {
+  animation: cook 0.5s ease-in-out infinite;
+}
+
+@keyframes cook {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tease-anim {
+  animation: tease 2s ease-in-out infinite;
+}
+
+@keyframes tease {
+
+  0%,
+  100% {
+    transform: scale(1);
+    filter: grayscale(0);
+  }
+
+  50% {
+    transform: scale(0.95);
+    filter: grayscale(0.5);
+  }
+}
+
+.duel-anim {
+  animation: duel 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes duel {
+  from {
+    transform: translateY(0) rotate(0);
+  }
+
+  to {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+.respect-anim {
+  animation: respect 1s ease-in-out infinite;
+}
+
+@keyframes respect {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px) scale(1.05);
+  }
+}
+
+.argue-anim {
+  animation: argue 0.2s linear infinite;
+}
+
+@keyframes argue {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.pray-anim {
+  animation: pray 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px gold);
+}
+
+@keyframes pray {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.hunt-anim {
+  animation: hunt 1s ease-in-out infinite alternate;
+}
+
+@keyframes hunt {
+  from {
+    transform: translateX(-10px);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.effect-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 0 #fff;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+}
+
+.effect-text.high-contrast {
+  color: #fff !important;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    4px 4px 0 rgba(0, 0, 0, 0.5);
+  font-size: 1.8rem;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.effect-text.lose {
+  color: #d32f2f;
+  font-size: 2rem;
+}
+
+.effect-text.burnt {
+  color: #3e2723;
+  font-size: 2rem;
+}
+
+.effect-text.sigh {
+  color: #555;
+  font-size: 2rem;
+}
+
+.effect-text.summon {
+  color: #ffd700;
+  font-size: 2rem;
+}
+
+.effect-text.respect {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.effect-text.argue {
+  color: #e91e63;
+  font-size: 1.2rem;
+  width: 120%;
+}
+
+.effect-text.pray {
+  color: #ffd700;
+  font-size: 2rem;
+  text-shadow: 0 0 10px gold;
+}
+
+.effect-text.hunt {
+  color: #00bcd4;
+  font-size: 2rem;
+}
+
 /* Wisdom Generator */
 .wisdom-section {
   padding: 4rem 2rem;

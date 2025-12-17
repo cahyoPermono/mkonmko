@@ -5,7 +5,7 @@ import BreakingNews from './components/BreakingNews';
 import WisdomGenerator from './components/WisdomGenerator';
 import FloatingBackground from './components/FloatingBackground';
 import SeriousMode from './components/SeriousMode';
-import PartnerInCrime from './components/PartnerInCrime';
+import MkonmkoCircle from './components/MkonmkoCircle';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <SeriousMode />
       <FloatingBackground />
       <Hero />
-      <PartnerInCrime />
+      <MkonmkoCircle />
       <WisdomGenerator />
       <Crimes />
       <BreakingNews />
