@@ -473,10 +473,14 @@ h3 {
 .breaking-news-ticker p {
   display: inline-block;
   padding-left: 100%;
-  animation: ticker 30s linear infinite;
+  animation: ticker 60s linear infinite;
   margin: 0;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.breaking-news-ticker p:hover {
+  animation-play-state: paused;
 }
 
 @keyframes ticker {
@@ -582,6 +586,122 @@ h3 {
 
 .tilt-container:hover .click-hint {
   opacity: 1;
+}
+
+/* Partner in Crime Section */
+.partner-section {
+  padding: 4rem 2rem;
+  background: #e3f2fd;
+  text-align: center;
+  border-top: 4px dashed #1565c0;
+  border-bottom: 4px dashed #1565c0;
+}
+
+.partner-section h2 {
+  font-size: 2.5rem;
+  color: #1565c0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #fff;
+}
+
+.partner-section .subtitle {
+  color: #555;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.partner-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  cursor: pointer;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.partner {
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.partner img {
+  height: 250px;
+  width: auto;
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.2));
+}
+
+.name-tag {
+  background: #fff;
+  color: #000;
+  /* Explicit black text */
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 3px solid #000;
+  /* Thicker border */
+  font-weight: 800;
+  /* Extra bold */
+  font-size: 1.1rem;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  /* Stronger shadow */
+  z-index: 5;
+}
+
+.partner:hover {
+  transform: scale(1.05);
+}
+
+.partner.cheers-left {
+  transform: translateX(50px) rotate(10deg);
+}
+
+.partner.cheers-right {
+  transform: translateX(-50px) rotate(-10deg);
+}
+
+.cheers-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.cheers-text {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 3rem;
+  color: #ffeb3b;
+  text-shadow: 3px 3px 0 #f57f17, -1px -1px 0 #fff;
+  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  white-space: nowrap;
+}
+
+.sparkles {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
 }
 
 /* Wisdom Generator */
